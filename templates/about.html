@@ -1,0 +1,11 @@
+<!--
+  This template loads for the 'tab.about' state (app.js)
+-->
+<ion-view title="建議行程">
+  <ion-content has-header="true" has-tabs="true" padding="true">
+    <ion-item ng-repeat="game in games" type="item-text-wrap" href="#/tab/pet/{{pet.id}}">
+        <h3>{{game.game_number}}</h3>
+        <p>{{game.at_team.name}} vs {{game.home_team.name}}</p>
+      </ion-item>
+  </ion-content>
+</ion-view>
