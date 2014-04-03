@@ -7,7 +7,7 @@
   <ion-content has-header="true" has-tabs="true">
 	
 		
-			<google-map center="map.center" zoom="map.zoom" ng-if="mapIsReady" >
+			<google-map center="map.center" zoom="map.zoom" draggable='true' ng-if="mapIsReady" >
 				<marker coords="marker1.coords" icon="marker1.icon"></marker>
 				<markers models="map.busMarkers" coords="'self'" icon="'icon'"></markers>
 				<markers models="map.bikeMarkers" coords="'self'" icon="'icon'"></markers>
